@@ -36,7 +36,7 @@
                 li.className = "todo-item";
                 li.innerHTML = `
                     <span>${newTask}</span>
-                    <button>Delete</button>
+                    <button onClick="removeTask(this)">Delete</button>
                 `;
                 todoList.appendChild(li);
                 todoInput.value = "";
